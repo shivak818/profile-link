@@ -1,0 +1,81 @@
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.full-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    width: 350px;
+    margin-top: 50px;
+    background-color: #343434;
+    border-radius: 20px;
+    /* Set a smaller height for desktop */
+    height: 650px; /* Adjust this value as needed */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 480px) {
+    .full-container {
+        width: 100%;
+        margin: 20px; /* Add some margin for better spacing */
+        padding: 10px;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    nav a {
+        width: 100%; /* Make the links full-width */
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .attribution {
+        display: none; /* Hide the attribution on mobile */
+    }
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.name p {
+    color: yellow;
+    font-size: 20px;
+}
+
+.name h1 {
+    color: white;
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+}
+
+.attribution {
+    margin-top: 150px;
+}
